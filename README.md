@@ -1,4 +1,4 @@
-# Geotrax website
+# Grounder website
 
 AI-powered global DMC network for travel agents, advisors and tour operators. Static site, no build step.
 
@@ -46,7 +46,7 @@ Flagged in the copy with a yellow VERIFY badge:
 - number of vetted partners and agencies served (placeholders `[X]`)
 - 48-hour first-response commitment
 - partner vetting threshold (years operating, references)
-- Geotrax fee level and partner reply time
+- Grounder fee level and partner reply time
 - public email, phone and office address
 - founding year, HQ and leadership
 - testimonials and client logos (placeholders only; none are invented)
