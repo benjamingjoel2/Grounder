@@ -21,6 +21,8 @@ function saveInqs(){ try{ localStorage.setItem(GX_STORE, JSON.stringify(INQS)); 
 function loadInqs(){ try{ const a = JSON.parse(localStorage.getItem(GX_STORE) || '[]'); if(Array.isArray(a)) a.forEach(i => { if(i && i.ref && !INQS.some(x => x.ref === i.ref)) INQS.push(i); }); lastRef = localStorage.getItem(GX_STORE + '.last') || lastRef; }catch(e){} }
 
 /* ───────── mobile menu ───────── */
+// Language switch: keep the current view (#/for-agents stays #/for-agents) when changing language.
+document.addEventListener('click', function(e){ const a = e.target.closest && e.target.closest('.lang-switch a'); if(a && location.hash) a.href = a.getAttribute('href').split('#')[0] + location.hash; });
 function toggleMenu(){ document.body.classList.contains('menu-open') ? closeMenu() : openMenu(); }
 function openMenu(){ document.body.classList.add('menu-open'); $('menu').setAttribute('aria-hidden', 'false'); $('nav-burger').setAttribute('aria-expanded', 'true'); }
 function closeMenu(){ document.body.classList.remove('menu-open'); $('menu').setAttribute('aria-hidden', 'true'); $('nav-burger').setAttribute('aria-expanded', 'false'); }
@@ -82,11 +84,6 @@ const PAGES = {
   <div class="p-card"><h3>Book through Grounder</h3><p class="p-big">Net rate + fee</p><p>Shown on each quote. You set your own margin on top.</p></div>
   <div class="p-card"><h3>Dashboard and white-label</h3><p class="p-big">Included</p><p>Client proposals, branded itineraries and 24/7 desk with every booking.</p></div>
 </div></div></div></section>
-<section><div class="wrap"><div class="sec-head"><div class="kick">What agents say</div><h2>Proof, not promises.</h2></div><div class="boxc"><div class="p-grid3">
-  <div class="p-card p-quote"><p>“[Testimonial placeholder — replace with a real, attributed quote from an agent who has booked through Grounder.]”</p><small>Name, agency, country</small></div>
-  <div class="p-card p-quote"><p>“[Testimonial placeholder]”</p><small>Name, agency, country</small></div>
-  <div class="p-card p-quote"><p>“[Testimonial placeholder]”</p><small>Name, agency, country</small></div>
-</div><p class="p-note">Testimonials and client logos appear here once you supply real ones. Nothing on this page is invented.</p></div></div></section>
 <section class="p-final"><div class="wrap"><h2>Send your next request through Grounder.</h2><p>No account, no onboarding. Paste the brief and see who answers.</p>${CTA}</div></section>`
   },
   'partners': {
@@ -140,11 +137,7 @@ const PAGES = {
   <div><b>[X]</b><span>Agencies served <em class="verify">add real count</em></span></div>
   <div><b>24/7</b><span>On-ground and desk support</span></div>
 </div></div></div></section>
-<section><div class="wrap"><div class="sec-head"><div class="kick">Company</div><h2>A Hyperporter company.</h2><p>Grounder is built by the team behind <a href="https://hyperporter.com" target="_blank" rel="noopener">Hyperporter</a>, the operating system for travel businesses. Every Grounder dashboard runs on it. <em class="verify">Add founding year, HQ and leadership once confirmed.</em></p></div><div class="boxc"><div class="p-grid3">
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-</div></div></div></section>
+<section><div class="wrap"><div class="sec-head"><div class="kick">Company</div><h2>A Hyperporter company.</h2><p>Grounder is built by the team behind <a href="https://hyperporter.com" target="_blank" rel="noopener">Hyperporter</a>, the operating system for travel businesses. Every Grounder dashboard runs on it. <em class="verify">Add founding year, HQ and leadership once confirmed.</em></p></div></div></section>
 <section class="p-final"><div class="wrap"><h2>See it on your own request.</h2><p>The fastest way to understand Grounder is to send a brief.</p>${CTA}</div></section>`
   },
   'privacy': {

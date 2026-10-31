@@ -11,6 +11,15 @@ npx http-server -p 8080 .
 
 Any static host works (GitHub Pages, Netlify, Vercel, S3). Deploy the repository root.
 
+## Languages
+
+English (default, `/`), French (`/fr/`), German (`/de/`) and Spanish (`/es/`). Each language is a pre-rendered copy of `index.html` that loads its own translated scripts (`js/pages.fr.js`, `js/dashboards.fr.js`, `js/trips.fr.js`, …). No translation library runs in the browser.
+
+- Translations live in `i18n/{fr,de,es}.json` as `{ "English text": "translation" }`. After changing copy, run `node scripts/i18n.mjs build` to regenerate the language folders, the translated scripts and the sitemap (`check` also lists missing strings).
+- Translated: navigation, all pages (home, how it works, for agents, partners, about, contact), the legal pages, the inquiry, check and partner forms with their messages, meta descriptions, and the signature-package titles and filters shown in Explore.
+- Stays in English: country and city names (they are lookup keys for the globe, search and data), the long package bodies in `js/trips.js` (pitch, highlights, day-by-day, inclusions: 2.5 MB), the text the simulated dashboards generate at runtime, and the example client email (the brief reader parses English).
+- The EN · FR · DE · ES switch sits in the header and the mobile menu and keeps the current view (`#/for-agents` stays `#/for-agents`).
+
 ## Structure
 
 | Path | What it is |
