@@ -4,8 +4,8 @@
    Until then they are stored in this browser (localStorage) and the contact/partner forms fall back to email. */
 const GX_CONFIG = {
   endpoint: '',                       // e.g. 'https://hooks.zapier.com/hooks/catch/xxxx/yyyy'
-  contactEmail: 'hello@grounder.com',  // VERIFY: real inbox for inquiries, partner applications and contact messages
-  phone: '',                          // VERIFY: optional, shown on the contact page when set
+  contactEmail: 'grounder@tourground.com',  // inbox for inquiries, partner applications and contact messages
+  address: 'Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom',  // business address (owner-approved coworking arrangement)
   demoQuotes: true                    // true = show illustrative quotes on the dashboard until DMCs are connected
 };
 async function gxSend(kind, payload){
@@ -21,6 +21,8 @@ function saveInqs(){ try{ localStorage.setItem(GX_STORE, JSON.stringify(INQS)); 
 function loadInqs(){ try{ const a = JSON.parse(localStorage.getItem(GX_STORE) || '[]'); if(Array.isArray(a)) a.forEach(i => { if(i && i.ref && !INQS.some(x => x.ref === i.ref)) INQS.push(i); }); lastRef = localStorage.getItem(GX_STORE + '.last') || lastRef; }catch(e){} }
 
 /* ───────── mobile menu ───────── */
+// Language switch: keep the current view (#/for-agents stays #/for-agents) when changing language.
+document.addEventListener('click', function(e){ const a = e.target.closest && e.target.closest('.lang-switch a'); if(a && location.hash) a.href = a.getAttribute('href').split('#')[0] + location.hash; });
 function toggleMenu(){ document.body.classList.contains('menu-open') ? closeMenu() : openMenu(); }
 function openMenu(){ document.body.classList.add('menu-open'); $('menu').setAttribute('aria-hidden', 'false'); $('nav-burger').setAttribute('aria-expanded', 'true'); }
 function closeMenu(){ document.body.classList.remove('menu-open'); $('menu').setAttribute('aria-hidden', 'true'); $('nav-burger').setAttribute('aria-expanded', 'false'); }
@@ -82,11 +84,6 @@ const PAGES = {
   <div class="p-card"><h3>Book through Grounder</h3><p class="p-big">Net rate + fee</p><p>Shown on each quote. You set your own margin on top.</p></div>
   <div class="p-card"><h3>Dashboard and white-label</h3><p class="p-big">Included</p><p>Client proposals, branded itineraries and 24/7 desk with every booking.</p></div>
 </div></div></div></section>
-<section><div class="wrap"><div class="sec-head"><div class="kick">What agents say</div><h2>Proof, not promises.</h2></div><div class="boxc"><div class="p-grid3">
-  <div class="p-card p-quote"><p>“[Testimonial placeholder — replace with a real, attributed quote from an agent who has booked through Grounder.]”</p><small>Name, agency, country</small></div>
-  <div class="p-card p-quote"><p>“[Testimonial placeholder]”</p><small>Name, agency, country</small></div>
-  <div class="p-card p-quote"><p>“[Testimonial placeholder]”</p><small>Name, agency, country</small></div>
-</div><p class="p-note">Testimonials and client logos appear here once you supply real ones. Nothing on this page is invented.</p></div></div></section>
 <section class="p-final"><div class="wrap"><h2>Send your next request through Grounder.</h2><p>No account, no onboarding. Paste the brief and see who answers.</p>${CTA}</div></section>`
   },
   'partners': {
@@ -140,12 +137,137 @@ const PAGES = {
   <div><b>[X]</b><span>Agencies served <em class="verify">add real count</em></span></div>
   <div><b>24/7</b><span>On-ground and desk support</span></div>
 </div></div></div></section>
-<section><div class="wrap"><div class="sec-head"><div class="kick">Company</div><h2>A Hyperporter company.</h2><p>Grounder is built by the team behind <a href="https://hyperporter.com" target="_blank" rel="noopener">Hyperporter</a>, the operating system for travel businesses. Every Grounder dashboard runs on it. <em class="verify">Add founding year, HQ and leadership once confirmed.</em></p></div><div class="boxc"><div class="p-grid3">
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-  <div class="p-card p-team"><div class="p-av">?</div><h3>[Name]</h3><p>[Role] · placeholder</p></div>
-</div></div></div></section>
+<section><div class="wrap"><div class="sec-head"><div class="kick">Company</div><h2>A Hyperporter company.</h2><p>Grounder is built by the team behind <a href="https://hyperporter.com" target="_blank" rel="noopener">Hyperporter</a>, the operating system for travel businesses. Every Grounder dashboard runs on it. <em class="verify">Add founding year, HQ and leadership once confirmed.</em></p></div></div></section>
 <section class="p-final"><div class="wrap"><h2>See it on your own request.</h2><p>The fastest way to understand Grounder is to send a brief.</p>${CTA}</div></section>`
+  },
+  'privacy': {
+    title: 'Privacy policy — Grounder', desc: 'How Grounder collects, uses and protects the details you share.',
+    html: () => `
+<section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Privacy policy.</h1><p class="lead">What we collect when you send a request, why, and what you can ask us to do with it.</p></div></section>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+
+<h2>Who we are</h2>
+<p>Grounder plans tailor-made trips for travel agents, advisors and tour operators, delivered by vetted local partners (DMCs) worldwide. Our address is Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom. We decide how the personal data described here is used and are responsible for it. Write to us about anything on this page at <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>.</p>
+
+<h2>What we collect</h2>
+<ul>
+  <li><strong>Your enquiry:</strong> what you send through our enquiry form or by email: names, email address, phone number if you give one, travel dates, group size and ages of children, interests, budget band and your message.</li>
+  <li><strong>Planning and booking details:</strong> once you ask us to plan or book a trip, what is needed to arrange it, such as names as they appear in passports, dates of birth, arrival and departure details, dietary needs and, only if you choose to tell us, health or access needs.</li>
+  <li><strong>Newsletter:</strong> if a newsletter sign-up is offered and you use it, your email address.</li>
+  <li><strong>Site usage:</strong> this site runs no analytics or advertising trackers.</li>
+</ul>
+<p>We do not take payment card details through this site.</p>
+
+<h2>Why we use it, and on what basis</h2>
+<ul>
+  <li>To answer your enquiry and prepare a proposal, because you asked us to (steps taken at your request before a contract).</li>
+  <li>To plan, book and run your trip (performance of our contract with you).</li>
+  <li>To handle health or access needs you tell us about, with your explicit consent, which you can withdraw at any time.</li>
+  <li>To keep the accounting and booking records the law requires (legal obligation).</li>
+  <li>To look after our business, for example to deal with a complaint or a claim (our legitimate interests).</li>
+</ul>
+<p>We only send you news or offers if you have asked for them, and you can stop them at any time. We never sell your personal data.</p>
+
+<h2>Who we share it with</h2>
+<p>Only those who need it: the vetted local partners (DMCs and ground operators) matched to your request, who quote and deliver the trip, and the companies that provide our email, form handling and website hosting. Each receives only what it needs. We may also share data where the law requires it.</p>
+<p>Your trip takes place outside the country where you may live, so the people delivering it will receive the details they need there. Where the law requires it, we put appropriate safeguards in place for those transfers, such as contractual commitments, or rely on the transfer being necessary to arrange the trip you asked for. You can ask us about them.</p>
+
+<h2>How long we keep it</h2>
+<p>Enquiries that do not lead to a booking are deleted within two years of our last contact. Booking records are kept for as long as tax and accounting law requires, and then deleted. Health and access details are deleted once your trip is over, unless you ask us to keep them for a future trip.</p>
+
+<h2>Keeping it safe</h2>
+<p>We keep personal data in secure, access-controlled systems and share it only as described here. If something goes wrong that affects your data, we will tell you.</p>
+
+<h2>Your rights</h2>
+<p>You can ask us for a copy of your personal data, and ask us to correct it, delete it, limit how we use it, or send it to you or someone else in a portable form. You can object to our using it on the basis of our legitimate interests, and withdraw any consent you have given. Write to <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>; we reply within one month. If you are not happy with our answer, you can complain to the data protection authority in the country where you live or work.</p>
+
+<h2>Cookies and storage</h2>
+<p>See our <a href="#/cookies">cookie policy</a>.</p>
+
+<h2>Changes</h2>
+<p>We update this policy when our practices change. The date at the top shows the latest version.</p>
+
+</div></div></div></section>`
+  },
+  'terms': {
+    title: 'Booking terms — Grounder', desc: 'The booking terms for trips requested through Grounder.',
+    html: () => `
+<section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Booking terms.</h1><p class="lead">The terms for a trip requested through Grounder, from first brief to the traveller coming home.</p></div></section>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+
+<h2>About these terms</h2>
+<p>These terms apply to every trip arranged by Grounder (“we”, “us”), Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom, and to your use of this website. Please read them before you book. “You” means the agent, advisor or tour operator who sends the request, and the travellers on the booking; the person who makes the booking accepts these terms for the whole group.</p>
+
+<h2>Enquiries and proposals</h2>
+<p>Sending an enquiry is free and commits you to nothing. We reply with questions, then a written proposal built for your dates, group and route. Prices shown on this site are guides (“from”) and are not offers; the price of your trip, what it includes and how long the proposal stays open are set out in the proposal. Prices depend on availability until the booking is confirmed.</p>
+
+<h2>Making a booking</h2>
+<p>A booking is made when you accept a proposal in writing and pay the deposit stated in it, and we confirm the booking in writing. Your confirmation sets out the trip, the price and the date the balance is due. Please check it and tell us straight away if anything is wrong, including names, which must match your passports.</p>
+
+<h2>Paying for your trip</h2>
+<p>A deposit is due when you book and the balance is due before you travel, on the date set out in your proposal and confirmation. If the balance is not paid on time, we may treat the booking as cancelled by you, and the cancellation charges below apply.</p>
+
+<h2>Changes you ask for</h2>
+<p>We will try to help if you want to change a confirmed booking, but cannot promise to. Changes may carry a cost, including charges from camps, hotels, airlines and other suppliers, and we will tell you what it is before you decide.</p>
+
+<h2>If you cancel</h2>
+<p>You can cancel at any time by writing to us. Cancellation charges then apply: they increase as the travel date gets closer and reflect the costs we and our suppliers cannot recover. The charges for your trip are set out in your proposal and confirmation. Your travel insurance may cover them.</p>
+
+<h2>If we change or cancel your trip</h2>
+<p>Tailor-made travel sometimes needs adjusting. If we have to make a significant change to your trip before you travel, we will tell you as soon as possible and offer you the choice of accepting the change, taking a comparable alternative, or cancelling with a full refund of what you have paid us. We will not cancel your trip after the balance is paid except for reasons beyond our control, and if we do, we will refund what you have paid us.</p>
+
+<h2>Events beyond anyone’s control</h2>
+<p>We are not responsible for changes, delays or cancellations caused by events that neither we nor our suppliers could foresee or avoid, such as extreme weather, natural disasters, epidemics, civil unrest, strikes, or official advice against travel. If such an event stops your trip, we will refund what we can recover and help you rearrange.</p>
+
+<h2>Travel insurance</h2>
+<p>You must have travel insurance that covers cancellation, medical treatment, repatriation and the activities in your trip, from the moment you book. Please send us the policy details before you travel.</p>
+
+<h2>Passports, visas and health</h2>
+<p>You are responsible for a valid passport, any visa you need, the vaccinations and health documents required, and for meeting the entry rules of every country you pass through. We give general information in good faith, but rules change: always check them with official sources and your doctor before you travel.</p>
+
+<h2>During your trip</h2>
+<p>Please follow the reasonable instructions of the people looking after you, respect local laws and customs, and tell us before you book about any medical condition, disability or needs that may affect your trip, so we can check that it suits you.</p>
+
+<h2>Our responsibility to you</h2>
+<p>We will plan and arrange your trip with reasonable skill and care and are responsible for making sure the arrangements we confirm are provided. We are not responsible where a problem is caused by you, by someone unconnected with your trip, or by events beyond anyone’s control. Where international conventions limit the liability of airlines, other carriers or hotels, our liability is limited in the same way. Nothing in these terms limits liability for death or personal injury caused by negligence, or anything else that cannot be limited by law.</p>
+
+<h2>If something goes wrong</h2>
+<p>If you have a problem during your trip, tell the person looking after you and contact us straight away, so we can try to put it right on the spot. If you are still unhappy, write to <a href="mailto:grounder@tourground.com">grounder@tourground.com</a> within 28 days of coming home; we will reply within 28 days.</p>
+
+<h2>Using this website</h2>
+<p>We describe places, seasons and entry rules as carefully as we can, but these change. The text and design of this site belong to us; photographs belong to their owners and are used with permission or under their licences. We link to other sites for information and are not responsible for their content.</p>
+
+<h2>Law</h2>
+<p>These terms are governed by the law that applies where Grounder is established, and disputes go to the courts there. This does not take away any rights you have under the consumer law of the country where you live.</p>
+
+<h2>Contact</h2>
+<p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
+
+</div></div></div></section>`
+  },
+  'cookies': {
+    title: 'Cookie policy — Grounder', desc: 'What the Grounder website stores in your browser.',
+    html: () => `
+<section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Cookie policy.</h1><p class="lead">What this site stores in your browser, listed exactly.</p></div></section>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+
+<h2>What cookies are</h2>
+<p>Cookies are small files a website saves in your browser. Local and session storage are similar stores inside your browser. Both can remember choices or count visits.</p>
+
+<h2>What this site stores</h2>
+<table class="legal-table"><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">Lasts</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Local storage, set by this site</td><td>Keeps the inquiries you send, so a reference opens your dashboard after a reload on the same device</td><td>Until you clear your browser storage</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Local storage, set by this site</td><td>Remembers your most recent inquiry reference</td><td>Until you clear your browser storage</td></tr></tbody></table>
+<p>This site sets no cookies of its own and runs no analytics, advertising or social-media trackers.</p>
+
+<h2>Your consent</h2>
+<p>The storage listed above is strictly necessary for a feature you choose to use, so it does not need consent. If we ever add cookies or storage that are not strictly necessary, such as analytics, we will ask you first and list them here. You can delete cookies and site storage at any time in your browser’s settings.</p>
+
+<h2>Other requests your browser makes</h2>
+<p>None. Fonts, images and scripts are served from this site. The dashboard pages run inside this site.</p>
+
+<h2>Contact</h2>
+<p>Questions about this policy: <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
+
+</div></div></div></section>`
   },
   'contact': {
     title: 'Contact Grounder — get a quote or partner with us', desc: 'Get an instant quote for any destination, apply as a local partner, or send the Grounder team a message.',
@@ -156,7 +278,7 @@ const PAGES = {
   <div class="p-card"><h3>Become a partner</h3><p>Local DMCs and ground operators: apply to receive qualified requests.</p>${CTA_P}</div>
   <div class="p-card"><h3>Check an inquiry</h3><p>Have a reference? Open your dashboard to see quotes and messages.</p><button class="btn grey" onclick="openCheck()">Check an inquiry</button></div>
 </div></div></div></section>
-<section><div class="wrap"><div class="sec-head"><div class="kick">Message us</div><h2>Anything else.</h2><p>Email <a href="mailto:${GX_CONFIG.contactEmail}">${GX_CONFIG.contactEmail}</a>${GX_CONFIG.phone ? ' or call <a href="tel:' + GX_CONFIG.phone.replace(/\s/g, '') + '">' + esc(GX_CONFIG.phone) + '</a>' : ''}. <em class="verify">Confirm the public email, phone and office address.</em></p></div><div class="boxc"><form class="p-form" id="contact-form" onsubmit="return submitContact(event)">
+<section><div class="wrap"><div class="sec-head"><div class="kick">Message us</div><h2>Anything else.</h2><p>Email <a href="mailto:${GX_CONFIG.contactEmail}">${GX_CONFIG.contactEmail}</a>. Our address: ${esc(GX_CONFIG.address)}.</p></div><div class="boxc"><form class="p-form" id="contact-form" onsubmit="return submitContact(event)">
   <div class="row2"><div class="f"><label>Your name</label><input name="name" required autocomplete="name"></div><div class="f"><label>Company</label><input name="company" autocomplete="organization"></div></div>
   <div class="row2"><div class="f"><label>Email</label><input name="email" type="email" required autocomplete="email"></div><div class="f"><label>Topic</label><select name="topic"><option>Trip inquiry</option><option>Partnership</option><option>Press</option><option>Something else</option></select></div></div>
   <div class="f"><label>Message</label><textarea name="message" rows="5" required></textarea></div>

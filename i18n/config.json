@@ -1,0 +1,61 @@
+{
+  "out": ".",
+  "relative": true,
+  "siteUrl": "https://grounder.tourground.com",
+  "locales": [
+    "fr",
+    "de",
+    "es"
+  ],
+  "default": "en",
+  "ogLocale": {
+    "fr": "fr_FR",
+    "de": "de_DE",
+    "es": "es_ES"
+  },
+  "ignore": [
+    "assets",
+    "js",
+    "scripts",
+    "i18n",
+    ".git",
+    ".github",
+    "README.md",
+    "vercel.json",
+    "robots.txt",
+    "sitemap.xml"
+  ],
+  "jsFiles": [
+    "js/pages.js",
+    "js/dashboards.js",
+    "js/trips.js"
+  ],
+  "keep": [
+    "Grounder",
+    "grounder@tourground.com",
+    "EN",
+    "FR",
+    "DE",
+    "ES",
+    "English",
+    "Fran\u00e7ais",
+    "Deutsch",
+    "Espa\u00f1ol",
+    "Hyperporter",
+    "Hyperporter OS"
+  ],
+  "localeReplace": [
+    [
+      "([\"'(=])assets/",
+      "$1../assets/"
+    ],
+    [
+      "(\\\\\")assets/",
+      "$1../assets/"
+    ],
+    [
+      "(['\"])js/(trips|dashboards)\\.",
+      "$1../js/$2."
+    ]
+  ]
+}
