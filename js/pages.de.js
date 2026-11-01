@@ -144,7 +144,7 @@ const PAGES = {
     title: 'Datenschutzerklärung — Grounder', desc: 'Wie Grounder die Angaben erhebt, nutzt und schützt, die Sie uns mitteilen.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Rechtliches</div><h1>Datenschutzerklärung.</h1><p class="lead">Was wir erheben, wenn Sie eine Anfrage senden, warum, und was Sie von uns verlangen können.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 30. Oktober 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 1. November 2026</p>
 
 <h2>Wer wir sind</h2>
 <p>Grounder plant maßgeschneiderte Reisen für Reisebüros, Reiseberater und Veranstalter, durchgeführt von geprüften lokalen Partnern (DMCs) weltweit. Unsere Adresse lautet Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Vereinigtes Königreich. Wir entscheiden, wie die hier beschriebenen personenbezogenen Daten verwendet werden, und sind dafür verantwortlich. Schreiben Sie uns zu allem auf dieser Seite an <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>.</p>
@@ -170,16 +170,19 @@ const PAGES = {
 
 <h2>An wen wir sie weitergeben</h2>
 <p>Nur an diejenigen, die sie brauchen: die geprüften lokalen Partner (DMCs und Agenturen vor Ort), die Ihrer Anfrage zugeordnet sind und die Reise kalkulieren und durchführen, sowie die Unternehmen, die unsere E-Mail, Formularverarbeitung und das Website-Hosting bereitstellen. Jeder erhält nur, was er braucht. Wo das Gesetz es verlangt, können wir Daten ebenfalls weitergeben.</p>
+<p>Diese Website wird von Vercel Inc. gehostet, das die zur Auslieferung jeder Seite nötigen technischen Daten, etwa Ihre IP-Adresse und Browserangaben, in kurzlebigen Server-Logs verarbeitet (höchstens 30 Tage gespeichert). Von Ihnen erstellte Anfragen bleiben in Ihrem eigenen Browser gespeichert, damit Ihr Dashboard nach einem Neuladen weiter funktioniert; Kontakt- und Partnerformular senden uns Ihre Angaben, indem sie eine vorausgefüllte E-Mail in Ihrem eigenen E-Mail-Programm öffnen.</p>
 <p>Ihre Reise findet außerhalb Ihres Wohnsitzlandes statt, daher erhalten die Menschen, die sie vor Ort durchführen, die nötigen Angaben dort. Wo das Gesetz es verlangt, treffen wir geeignete Garantien für diese Übermittlungen, etwa vertragliche Zusagen, oder stützen uns darauf, dass die Übermittlung für die gewünschte Reise erforderlich ist. Sie können uns dazu jederzeit fragen.</p>
+<p>Wo das Datenschutzrecht es verlangt, stützen wir uns auf anerkannte Garantien wie die Standardvertragsklauseln der Europäischen Kommission und den britischen International Data Transfer Addendum, Angemessenheitsbeschlüsse oder darauf, dass die Übermittlung zur Erfüllung des von Ihnen gewünschten Vertrags erforderlich ist.</p>
 
 <h2>Wie lange wir sie aufbewahren</h2>
-<p>Anfragen, die nicht zu einer Buchung führen, werden innerhalb von zwei Jahren nach unserem letzten Kontakt gelöscht. Buchungsunterlagen werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, und danach gelöscht. Gesundheits- und Barrierefreiheitsangaben werden nach Ende Ihrer Reise gelöscht, es sei denn, Sie bitten uns, sie für eine künftige Reise aufzubewahren.</p>
+<p>Anfragen, die nicht zu einer Buchung führen, werden innerhalb von zwei Jahren nach unserem letzten Kontakt gelöscht. Buchungsunterlagen werden so lange aufbewahrt, wie es Steuer- und Handelsrecht verlangen, und danach gelöscht. Gesundheits- und Barrierefreiheitsangaben werden nach Ende Ihrer Reise gelöscht, es sei denn, Sie bitten uns, sie für eine künftige Reise aufzubewahren. Server-Logs bewahrt unser Hosting-Anbieter höchstens 30 Tage auf.</p>
 
 <h2>Sicherheit Ihrer Daten</h2>
 <p>Wir speichern personenbezogene Daten in sicheren Systemen mit Zugriffskontrolle und geben sie nur wie hier beschrieben weiter. Geht etwas schief, das Ihre Daten betrifft, informieren wir Sie.</p>
 
 <h2>Ihre Rechte</h2>
 <p>Sie können eine Kopie Ihrer personenbezogenen Daten verlangen und uns bitten, sie zu berichtigen, zu löschen, ihre Nutzung einzuschränken oder sie Ihnen oder einem Dritten in einem übertragbaren Format zu senden. Sie können der Nutzung auf Grundlage unseres berechtigten Interesses widersprechen und jede erteilte Einwilligung widerrufen. Schreiben Sie an <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>; wir antworten innerhalb eines Monats. Sind Sie mit unserer Antwort nicht zufrieden, können Sie sich bei der Datenschutzbehörde des Landes beschweren, in dem Sie leben oder arbeiten.</p>
+<p>Unsere Aufsichtsbehörde ist das britische Information Commissioner’s Office (ico.org.uk). Wenn Sie in der Europäischen Union leben, können Sie sich auch bei der Datenschutzbehörde Ihres Landes beschweren.</p>
 
 <h2>Cookies und Speicher</h2>
 <p>Siehe unsere <a href="#/cookies">Cookie-Richtlinie</a>.</p>
@@ -187,13 +190,19 @@ const PAGES = {
 <h2>Änderungen</h2>
 <p>Wir aktualisieren diese Erklärung, wenn sich unsere Praxis ändert. Das Datum oben zeigt die aktuelle Fassung.</p>
 
+<h2>Kinder</h2>
+<p>Diese Website richtet sich an Reiseprofis und Erwachsene. Wir erheben wissentlich keine personenbezogenen Daten direkt von Kindern unter 16 Jahren. Angaben zu Kindern, die in einer Gruppe reisen, erhalten wir vom Reisebüro, einem Elternteil oder Vormund und nutzen sie nur, um die Reise zu planen und durchzuführen.</p>
+
+<h2>Kontakt</h2>
+<p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Vereinigtes Königreich. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
+
 </div></div></div></section>`
   },
   'terms': {
     title: 'Buchungsbedingungen — Grounder', desc: 'Die Buchungsbedingungen für Reisen, die über Grounder angefragt werden.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Rechtliches</div><h1>Buchungsbedingungen.</h1><p class="lead">Die Bedingungen für eine über Grounder angefragte Reise, vom ersten Briefing bis zur Heimkehr der Reisenden.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 30. Oktober 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 1. November 2026</p>
 
 <h2>Über diese Bedingungen</h2>
 <p>Diese Bedingungen gelten für jede von Grounder („wir“, „uns“), Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Vereinigtes Königreich, organisierte Reise sowie für Ihre Nutzung dieser Website. Bitte lesen Sie sie vor der Buchung. „Sie“ meint das Reisebüro, den Reiseberater oder Veranstalter, der die Anfrage sendet, und die Reisenden der Buchung; wer bucht, akzeptiert diese Bedingungen für die ganze Gruppe.</p>
@@ -206,12 +215,16 @@ const PAGES = {
 
 <h2>Bezahlung Ihrer Reise</h2>
 <p>Bei der Buchung ist eine Anzahlung fällig, der Restbetrag vor der Reise zu dem in Angebot und Bestätigung genannten Datum. Wird der Restbetrag nicht rechtzeitig gezahlt, können wir die Buchung als von Ihnen storniert behandeln, und die unten genannten Stornokosten fallen an.</p>
+<p>Sofern Ihr Angebot nichts anderes vorsieht, beträgt die Anzahlung 30 % des Gesamtpreises und der Restbetrag ist 60 Tage vor Abreise fällig; buchen Sie weniger als 60 Tage vor Abreise, ist der volle Preis bei Buchung fällig.</p>
+
+<h2>Was im Preis enthalten ist</h2>
+<p>In Angebot und Bestätigung steht genau, was enthalten ist: in der Regel die Unterkünfte, die genannten Mahlzeiten, private Transfers und Transporte, die aufgeführte Begleitung, Aktivitäten sowie Eintritts- oder Parkgebühren und Betreuung vor und während der Reise. Sofern das Angebot nichts anderes sagt, sind internationale Flüge, Visa, Reiseversicherung, Impfungen und medizinische Kosten, Trinkgelder, nicht genannte Getränke und Mahlzeiten, optionale Aktivitäten und persönliche Ausgaben nicht enthalten.</p>
 
 <h2>Änderungen auf Ihren Wunsch</h2>
 <p>Wir versuchen zu helfen, wenn Sie eine bestätigte Buchung ändern möchten, können es aber nicht versprechen. Änderungen können Kosten verursachen, auch durch Camps, Hotels, Fluggesellschaften und andere Anbieter; wir nennen Ihnen diese, bevor Sie entscheiden.</p>
 
 <h2>Wenn Sie stornieren</h2>
-<p>Sie können jederzeit schriftlich stornieren. Dann fallen Stornokosten an: Sie steigen, je näher der Reisetermin rückt, und spiegeln die Kosten wider, die wir und unsere Anbieter nicht zurückerhalten. Die Kosten für Ihre Reise stehen in Angebot und Bestätigung. Ihre Reiseversicherung kann sie abdecken.</p>
+<p>Sie können jederzeit schriftlich stornieren; die Stornierung wird an dem Tag wirksam, an dem sie bei uns eingeht. Da wir für Sie Zahlungen an Partner eingehen, gelten – sofern Ihr Angebot nichts anderes vorsieht – folgende Gebühren in Prozent des Gesamtpreises: mehr als 60 Tage vor Abreise Verlust der Anzahlung (30 %); 60 bis 31 Tage 50 %; 30 bis 15 Tage 75 %; 14 Tage oder weniger oder bei Nichtantritt 100 %. Sind die Bedingungen eines Leistungsträgers strenger, etwa bei nicht erstattbaren Flügen, Genehmigungen oder Aufenthalten in der Hochsaison, steht das im Angebot, und diese Gebühren gelten stattdessen. Eine Reiseversicherung kann Stornokosten abdecken.</p>
 
 <h2>Wenn wir Ihre Reise ändern oder absagen</h2>
 <p>Maßgeschneiderte Reisen müssen manchmal angepasst werden. Müssen wir Ihre Reise vor Abreise wesentlich ändern, sagen wir es Ihnen so früh wie möglich und lassen Sie wählen: die Änderung annehmen, eine vergleichbare Alternative wählen oder mit voller Erstattung des Gezahlten stornieren. Nach Zahlung des Restbetrags sagen wir Ihre Reise nur aus Gründen ab, die außerhalb unserer Kontrolle liegen, und erstatten Ihnen dann, was Sie gezahlt haben.</p>
@@ -237,8 +250,11 @@ const PAGES = {
 <h2>Nutzung dieser Website</h2>
 <p>Wir beschreiben Orte, Jahreszeiten und Einreisebestimmungen so sorgfältig wie möglich, doch sie ändern sich. Texte und Gestaltung dieser Website gehören uns; Fotos gehören ihren Urhebern und werden mit Erlaubnis oder unter ihren Lizenzen verwendet. Links zu anderen Websites dienen der Information; für deren Inhalte sind wir nicht verantwortlich.</p>
 
+<h2>Datenschutz</h2>
+<p>Wir verwenden personenbezogene Daten nur wie beschrieben in unserer <a href="#/privacy">Datenschutzerklärung</a>.</p>
+
 <h2>Anwendbares Recht</h2>
-<p>Diese Bedingungen unterliegen dem Recht am Sitz von Grounder, und Streitigkeiten werden vor den dortigen Gerichten verhandelt. Ihre Rechte nach dem Verbraucherrecht Ihres Wohnsitzlandes bleiben davon unberührt.</p>
+<p>Für diese Bedingungen und alle daraus entstehenden Streitigkeiten gilt das Recht von England und Wales; zuständig sind die Gerichte von England und Wales. Wohnen Sie anderswo, bleiben Ihnen die zwingenden Rechte aus dem Verbraucherrecht Ihres Wohnsitzlandes erhalten, und Sie können auch dort klagen.</p>
 
 <h2>Kontakt</h2>
 <p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Vereinigtes Königreich. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
@@ -249,13 +265,13 @@ const PAGES = {
     title: 'Cookie-Richtlinie — Grounder', desc: 'Was die Grounder-Website in Ihrem Browser speichert.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Rechtliches</div><h1>Cookie-Richtlinie.</h1><p class="lead">Was diese Website in Ihrem Browser speichert, genau aufgelistet.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 30. Oktober 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Zuletzt aktualisiert am 1. November 2026</p>
 
 <h2>Was Cookies sind</h2>
 <p>Cookies sind kleine Dateien, die eine Website in Ihrem Browser ablegt. Lokaler Speicher und Sitzungsspeicher sind ähnliche Speicher in Ihrem Browser. Beide können Einstellungen speichern oder Besuche zählen.</p>
 
 <h2>Was diese Website speichert</h2>
-<table class="legal-table"><thead><tr><th scope="col">Name</th><th scope="col">Art</th><th scope="col">Zweck</th><th scope="col">Dauer</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Lokaler Speicher, von dieser Website gesetzt</td><td>Speichert Ihre gesendeten Anfragen, damit eine Referenz Ihr Dashboard nach einem Neuladen auf demselben Gerät öffnet</td><td>Bis Sie Ihren Browserspeicher leeren</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Lokaler Speicher, von dieser Website gesetzt</td><td>Merkt sich die Referenz Ihrer letzten Anfrage</td><td>Bis Sie Ihren Browserspeicher leeren</td></tr></tbody></table>
+<table class="legal-table"><thead><tr><th scope="col">Name</th><th scope="col">Art</th><th scope="col">Zweck</th><th scope="col">Dauer</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Lokaler Speicher, von dieser Website gesetzt</td><td>Speichert Ihre gesendeten Anfragen, damit eine Referenz Ihr Dashboard nach einem Neuladen auf demselben Gerät öffnet</td><td>Bis Sie Ihren Browserspeicher leeren</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Lokaler Speicher, von dieser Website gesetzt</td><td>Merkt sich die Referenz Ihrer letzten Anfrage</td><td>Bis Sie Ihren Browserspeicher leeren</td></tr><tr><td><code>grounder.partners</code></td><td>Lokaler Speicher, von dieser Website gesetzt</td><td>Bewahrt eine Kopie der Partnerbewerbung auf, die Sie auf diesem Gerät senden</td><td>Bis Sie Ihren Browserspeicher leeren</td></tr></tbody></table>
 <p>Diese Website setzt keine eigenen Cookies und nutzt keine Analyse-, Werbe- oder Social-Media-Tracker.</p>
 
 <h2>Ihre Einwilligung</h2>
@@ -263,6 +279,9 @@ const PAGES = {
 
 <h2>Weitere Anfragen Ihres Browsers</h2>
 <p>Keine. Schriften, Bilder und Skripte werden von dieser Website ausgeliefert. Die Dashboard-Seiten laufen innerhalb dieser Website.</p>
+
+<h2>Änderungen dieser Richtlinie</h2>
+<p>Speichert die Website künftig etwas Neues, aktualisieren wir vorher diese Seite und das Datum oben.</p>
 
 <h2>Kontakt</h2>
 <p>Fragen zu dieser Richtlinie: <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
