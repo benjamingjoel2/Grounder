@@ -144,7 +144,7 @@ const PAGES = {
     title: 'Política de privacidad — Grounder', desc: 'Cómo recoge, usa y protege Grounder los datos que compartes.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Política de privacidad.</h1><p class="lead">Qué recogemos cuando envías una solicitud, por qué y qué puedes pedirnos que hagamos con ello.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 30 de octubre de 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 1 de noviembre de 2026</p>
 
 <h2>Quiénes somos</h2>
 <p>Grounder organiza viajes a medida para agentes, asesores de viajes y turoperadores, realizados por socios locales verificados (DMC) en todo el mundo. Nuestra dirección es Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Reino Unido. Decidimos cómo se usan los datos personales descritos aquí y somos responsables de ellos. Escríbenos sobre cualquier punto de esta página a <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>.</p>
@@ -170,16 +170,19 @@ const PAGES = {
 
 <h2>Con quién los compartimos</h2>
 <p>Solo con quien los necesita: los socios locales verificados (DMC y operadores locales) asignados a tu solicitud, que cotizan y realizan el viaje, y las empresas que prestan nuestro correo, la gestión de formularios y el alojamiento web. Cada uno recibe solo lo que necesita. También podemos compartir datos cuando la ley lo exige.</p>
+<p>Este sitio está alojado en Vercel Inc., que trata los datos técnicos necesarios para servir cada página, como tu dirección IP y los datos de tu navegador, en registros de servidor de corta duración (conservados 30 días como máximo). Las solicitudes que creas se guardan en tu propio navegador para que tu panel siga funcionando tras recargar, y los formularios de contacto y de socios nos envían tus datos abriendo un correo prerrellenado en tu propio programa de correo.</p>
 <p>Tu viaje transcurre fuera del país donde puedes vivir, así que quienes lo hacen posible allí recibirán los datos que necesitan. Cuando la ley lo exige, aplicamos garantías adecuadas para esas transferencias, como compromisos contractuales, o nos basamos en que la transferencia es necesaria para organizar el viaje que has pedido. Puedes preguntarnos por ellas.</p>
+<p>Cuando la normativa de protección de datos lo exige, nos apoyamos en garantías reconocidas como las cláusulas contractuales tipo de la Comisión Europea y el anexo británico de transferencias internacionales de datos, decisiones de adecuación o el hecho de que la transferencia sea necesaria para ejecutar el contrato que nos has pedido organizar.</p>
 
 <h2>Cuánto tiempo los conservamos</h2>
-<p>Las consultas que no terminan en reserva se eliminan en un plazo de dos años desde nuestro último contacto. Los registros de reserva se conservan el tiempo que exige la normativa fiscal y contable, y después se eliminan. Los datos de salud y accesibilidad se eliminan al terminar tu viaje, salvo que nos pidas conservarlos para un próximo viaje.</p>
+<p>Las consultas que no terminan en reserva se eliminan en un plazo de dos años desde nuestro último contacto. Los registros de reserva se conservan el tiempo que exige la normativa fiscal y contable, y después se eliminan. Los datos de salud y accesibilidad se eliminan al terminar tu viaje, salvo que nos pidas conservarlos para un próximo viaje. Nuestro proveedor de alojamiento conserva los registros del servidor 30 días como máximo.</p>
 
 <h2>Seguridad de los datos</h2>
 <p>Guardamos los datos personales en sistemas seguros con control de acceso y solo los compartimos como se describe aquí. Si ocurre algo que afecte a tus datos, te lo diremos.</p>
 
 <h2>Tus derechos</h2>
 <p>Puedes pedirnos una copia de tus datos personales y que los corrijamos, los eliminemos, limitemos su uso o te los enviemos, a ti o a otra persona, en un formato portable. Puedes oponerte a que los usemos con base en nuestro interés legítimo y retirar cualquier consentimiento que hayas dado. Escribe a <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>; respondemos en el plazo de un mes. Si no estás conforme con nuestra respuesta, puedes reclamar ante la autoridad de protección de datos del país donde vives o trabajas.</p>
+<p>Nuestra autoridad de control es la Information Commissioner’s Office del Reino Unido (ico.org.uk). Si vives en la Unión Europea, también puedes reclamar ante la autoridad de protección de datos de tu país (en España, la AEPD).</p>
 
 <h2>Cookies y almacenamiento</h2>
 <p>Consulta nuestra <a href="#/cookies">política de cookies</a>.</p>
@@ -187,13 +190,19 @@ const PAGES = {
 <h2>Cambios</h2>
 <p>Actualizamos esta política cuando cambian nuestras prácticas. La fecha de arriba indica la versión más reciente.</p>
 
+<h2>Niños</h2>
+<p>Este sitio está dirigido a profesionales del viaje y a adultos. No recogemos a sabiendas datos personales directamente de menores de 16 años. Los datos de los niños que viajan en un grupo nos los facilita el agente, su padre, madre o tutor, y solo se usan para planificar y realizar el viaje.</p>
+
+<h2>Contacto</h2>
+<p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Reino Unido. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
+
 </div></div></div></section>`
   },
   'terms': {
     title: 'Condiciones de reserva — Grounder', desc: 'Las condiciones de reserva de los viajes solicitados a través de Grounder.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Condiciones de reserva.</h1><p class="lead">Las condiciones de un viaje solicitado a través de Grounder, desde el primer brief hasta la vuelta del viajero.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 30 de octubre de 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 1 de noviembre de 2026</p>
 
 <h2>Sobre estas condiciones</h2>
 <p>Estas condiciones se aplican a todos los viajes organizados por Grounder («nosotros»), Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Reino Unido, y a tu uso de este sitio web. Léelas antes de reservar. «Tú» se refiere al agente, asesor o turoperador que envía la solicitud y a los viajeros de la reserva; quien hace la reserva acepta estas condiciones en nombre de todo el grupo.</p>
@@ -206,12 +215,16 @@ const PAGES = {
 
 <h2>Pago del viaje</h2>
 <p>Al reservar se paga un depósito y el resto antes de viajar, en la fecha indicada en tu propuesta y confirmación. Si el resto no se paga a tiempo, podemos considerar la reserva cancelada por ti y se aplican los gastos de cancelación indicados abajo.</p>
+<p>Salvo que tu propuesta indique otra cosa, el depósito es del 30 % del precio total y el saldo se paga 60 días antes de la salida; si reservas con menos de 60 días de antelación, el precio total se paga al reservar.</p>
+
+<h2>Qué está incluido</h2>
+<p>Tu propuesta y tu confirmación detallan exactamente qué está incluido: normalmente el alojamiento, las comidas indicadas, los traslados y transportes privados, el acompañamiento, las actividades y las entradas o tasas de parques que se mencionan, y asistencia antes y durante el viaje. Salvo que la propuesta diga otra cosa, el precio no incluye vuelos internacionales, visados, seguro de viaje, vacunas y gastos médicos, propinas, bebidas y comidas no indicadas, actividades opcionales ni gastos personales.</p>
 
 <h2>Cambios que nos pidas</h2>
 <p>Intentaremos ayudarte si quieres cambiar una reserva confirmada, pero no podemos prometerlo. Los cambios pueden tener un coste, incluidos cargos de campamentos, hoteles, aerolíneas y otros proveedores, y te lo diremos antes de que decidas.</p>
 
 <h2>Si cancelas</h2>
-<p>Puedes cancelar en cualquier momento escribiéndonos. Entonces se aplican gastos de cancelación: aumentan a medida que se acerca la fecha del viaje y reflejan los costes que ni nosotros ni nuestros proveedores podemos recuperar. Los gastos de tu viaje figuran en tu propuesta y confirmación. Tu seguro de viaje puede cubrirlos.</p>
+<p>Puedes cancelar en cualquier momento escribiéndonos; la cancelación surte efecto el día en que la recibimos. Como comprometemos dinero con los socios en tu nombre, salvo que tu propuesta indique otra cosa se aplican estos gastos, en porcentaje del precio total: más de 60 días antes de la salida, pérdida del depósito (30 %); de 60 a 31 días, 50 %; de 30 a 15 días, 75 %; 14 días o menos, o si los viajeros no viajan, 100 %. Cuando las condiciones de un proveedor son más estrictas, por ejemplo vuelos, permisos o estancias de temporada alta no reembolsables, la propuesta lo indicará y se aplicarán esos gastos. El seguro de viaje puede cubrir los gastos de cancelación.</p>
 
 <h2>Si modificamos o cancelamos tu viaje</h2>
 <p>Los viajes a medida a veces necesitan ajustes. Si tenemos que hacer un cambio importante en tu viaje antes de la salida, te lo diremos lo antes posible y podrás elegir entre aceptar el cambio, optar por una alternativa comparable o cancelar con el reembolso íntegro de lo que nos hayas pagado. No cancelaremos tu viaje después de pagado el resto salvo por causas ajenas a nuestro control y, si lo hacemos, te devolveremos lo que hayas pagado.</p>
@@ -237,8 +250,11 @@ const PAGES = {
 <h2>Uso de este sitio web</h2>
 <p>Describimos lugares, temporadas y requisitos de entrada con el mayor cuidado posible, pero cambian. Los textos y el diseño de este sitio son nuestros; las fotografías pertenecen a sus autores y se usan con permiso o bajo sus licencias. Enlazamos a otros sitios a título informativo y no somos responsables de su contenido.</p>
 
+<h2>Protección de datos</h2>
+<p>Usamos los datos personales solo como se describe en nuestra <a href="#/privacy">política de privacidad</a>.</p>
+
 <h2>Legislación aplicable</h2>
-<p>Estas condiciones se rigen por la legislación del lugar donde está establecida Grounder, y las disputas corresponden a sus tribunales. Esto no te priva de ningún derecho que te otorgue la legislación de consumo de tu país de residencia.</p>
+<p>Estas condiciones, y cualquier controversia derivada de ellas, se rigen por las leyes de Inglaterra y Gales, y son competentes los tribunales de Inglaterra y Gales. Si resides en otro país, ello no te priva de los derechos imperativos que te reconozca la legislación de consumo de tu país de residencia, y también puedes acudir a sus tribunales.</p>
 
 <h2>Contacto</h2>
 <p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, Reino Unido. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
@@ -249,13 +265,13 @@ const PAGES = {
     title: 'Política de cookies — Grounder', desc: 'Lo que la web de Grounder guarda en tu navegador.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Política de cookies.</h1><p class="lead">Lo que este sitio guarda en tu navegador, con detalle.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 30 de octubre de 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Última actualización: 1 de noviembre de 2026</p>
 
 <h2>Qué son las cookies</h2>
 <p>Las cookies son pequeños archivos que un sitio web guarda en tu navegador. El almacenamiento local y el de sesión son espacios parecidos dentro del navegador. Ambos pueden recordar elecciones o contar visitas.</p>
 
 <h2>Lo que guarda este sitio</h2>
-<table class="legal-table"><thead><tr><th scope="col">Nombre</th><th scope="col">Tipo</th><th scope="col">Finalidad</th><th scope="col">Duración</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Almacenamiento local, de este sitio</td><td>Guarda las solicitudes que envías para que una referencia abra tu panel tras recargar en el mismo dispositivo</td><td>Hasta que borres el almacenamiento del navegador</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Almacenamiento local, de este sitio</td><td>Recuerda la referencia de tu última solicitud</td><td>Hasta que borres el almacenamiento del navegador</td></tr></tbody></table>
+<table class="legal-table"><thead><tr><th scope="col">Nombre</th><th scope="col">Tipo</th><th scope="col">Finalidad</th><th scope="col">Duración</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Almacenamiento local, de este sitio</td><td>Guarda las solicitudes que envías para que una referencia abra tu panel tras recargar en el mismo dispositivo</td><td>Hasta que borres el almacenamiento del navegador</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Almacenamiento local, de este sitio</td><td>Recuerda la referencia de tu última solicitud</td><td>Hasta que borres el almacenamiento del navegador</td></tr><tr><td><code>grounder.partners</code></td><td>Almacenamiento local, de este sitio</td><td>Guarda una copia de la solicitud de socio que envías desde este dispositivo</td><td>Hasta que borres el almacenamiento del navegador</td></tr></tbody></table>
 <p>Este sitio no instala cookies propias ni utiliza herramientas de analítica, publicidad o seguimiento de redes sociales.</p>
 
 <h2>Tu consentimiento</h2>
@@ -263,6 +279,9 @@ const PAGES = {
 
 <h2>Otras solicitudes que hace tu navegador</h2>
 <p>Ninguna. Las fuentes, imágenes y scripts se sirven desde este sitio. Las páginas del panel funcionan dentro de este sitio.</p>
+
+<h2>Cambios en esta política</h2>
+<p>Si el sitio empieza a guardar algo nuevo, actualizaremos antes esta página y la fecha de arriba.</p>
 
 <h2>Contacto</h2>
 <p>Preguntas sobre esta política: <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>

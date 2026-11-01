@@ -144,7 +144,7 @@ const PAGES = {
     title: 'Privacy policy — Grounder', desc: 'How Grounder collects, uses and protects the details you share.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Privacy policy.</h1><p class="lead">What we collect when you send a request, why, and what you can ask us to do with it.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 1 November 2026</p>
 
 <h2>Who we are</h2>
 <p>Grounder plans tailor-made trips for travel agents, advisors and tour operators, delivered by vetted local partners (DMCs) worldwide. Our address is Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom. We decide how the personal data described here is used and are responsible for it. Write to us about anything on this page at <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>.</p>
@@ -170,16 +170,19 @@ const PAGES = {
 
 <h2>Who we share it with</h2>
 <p>Only those who need it: the vetted local partners (DMCs and ground operators) matched to your request, who quote and deliver the trip, and the companies that provide our email, form handling and website hosting. Each receives only what it needs. We may also share data where the law requires it.</p>
+<p>This website is hosted by Vercel Inc., which processes the technical data needed to deliver each page, such as your IP address and browser details, in short-lived server logs (kept no more than 30 days). Inquiries you create are kept in your own browser so your dashboard keeps working after a reload, and the contact and partner forms send their details to us by opening a pre-filled email in your own email program.</p>
 <p>Your trip takes place outside the country where you may live, so the people delivering it will receive the details they need there. Where the law requires it, we put appropriate safeguards in place for those transfers, such as contractual commitments, or rely on the transfer being necessary to arrange the trip you asked for. You can ask us about them.</p>
+<p>Where data protection law requires it, we rely on recognised safeguards such as the European Commission’s standard contractual clauses and the UK International Data Transfer Addendum, adequacy regulations, or the fact that the transfer is necessary to perform the contract you asked us to arrange.</p>
 
 <h2>How long we keep it</h2>
-<p>Enquiries that do not lead to a booking are deleted within two years of our last contact. Booking records are kept for as long as tax and accounting law requires, and then deleted. Health and access details are deleted once your trip is over, unless you ask us to keep them for a future trip.</p>
+<p>Enquiries that do not lead to a booking are deleted within two years of our last contact. Booking records are kept for as long as tax and accounting law requires, and then deleted. Health and access details are deleted once your trip is over, unless you ask us to keep them for a future trip. Server logs are kept by our hosting provider for no more than 30 days.</p>
 
 <h2>Keeping it safe</h2>
 <p>We keep personal data in secure, access-controlled systems and share it only as described here. If something goes wrong that affects your data, we will tell you.</p>
 
 <h2>Your rights</h2>
 <p>You can ask us for a copy of your personal data, and ask us to correct it, delete it, limit how we use it, or send it to you or someone else in a portable form. You can object to our using it on the basis of our legitimate interests, and withdraw any consent you have given. Write to <a href="mailto:grounder@tourground.com">grounder@tourground.com</a>; we reply within one month. If you are not happy with our answer, you can complain to the data protection authority in the country where you live or work.</p>
+<p>Our supervisory authority is the UK Information Commissioner’s Office (ico.org.uk). If you live in the European Union, you can also complain to the data protection authority of your country.</p>
 
 <h2>Cookies and storage</h2>
 <p>See our <a href="#/cookies">cookie policy</a>.</p>
@@ -187,13 +190,19 @@ const PAGES = {
 <h2>Changes</h2>
 <p>We update this policy when our practices change. The date at the top shows the latest version.</p>
 
+<h2>Children</h2>
+<p>This website is for travel professionals and adults. We do not knowingly collect personal data directly from children under 16. Details of children travelling in a group are given to us by the agent or a parent or guardian and are used only to plan and run the trip.</p>
+
+<h2>Contact</h2>
+<p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
+
 </div></div></div></section>`
   },
   'terms': {
     title: 'Booking terms — Grounder', desc: 'The booking terms for trips requested through Grounder.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Booking terms.</h1><p class="lead">The terms for a trip requested through Grounder, from first brief to the traveller coming home.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 1 November 2026</p>
 
 <h2>About these terms</h2>
 <p>These terms apply to every trip arranged by Grounder (“we”, “us”), Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom, and to your use of this website. Please read them before you book. “You” means the agent, advisor or tour operator who sends the request, and the travellers on the booking; the person who makes the booking accepts these terms for the whole group.</p>
@@ -206,12 +215,16 @@ const PAGES = {
 
 <h2>Paying for your trip</h2>
 <p>A deposit is due when you book and the balance is due before you travel, on the date set out in your proposal and confirmation. If the balance is not paid on time, we may treat the booking as cancelled by you, and the cancellation charges below apply.</p>
+<p>Unless your proposal states otherwise, the deposit is 30% of the total price and the balance is due 60 days before departure; if you book within 60 days of departure, the full price is due when you book.</p>
+
+<h2>What is included</h2>
+<p>Your proposal and confirmation list exactly what is included: typically accommodation, the meals stated, private transfers and transport, the guiding, activities and entrance or park fees listed, and support before and during the trip. Unless the proposal says otherwise, the price does not include international flights, visas, travel insurance, vaccinations and medical costs, tips, drinks and meals not listed, optional activities and personal expenses.</p>
 
 <h2>Changes you ask for</h2>
 <p>We will try to help if you want to change a confirmed booking, but cannot promise to. Changes may carry a cost, including charges from camps, hotels, airlines and other suppliers, and we will tell you what it is before you decide.</p>
 
 <h2>If you cancel</h2>
-<p>You can cancel at any time by writing to us. Cancellation charges then apply: they increase as the travel date gets closer and reflect the costs we and our suppliers cannot recover. The charges for your trip are set out in your proposal and confirmation. Your travel insurance may cover them.</p>
+<p>You can cancel at any time by writing to us; the cancellation takes effect on the day we receive it. Because we commit money to partners on your behalf, unless your proposal states otherwise these charges apply, as a percentage of the total price: more than 60 days before departure, loss of the deposit (30%); 60 to 31 days, 50%; 30 to 15 days, 75%; 14 days or fewer, or if the travellers do not travel, 100%. Where a supplier’s own terms are stricter, for example non-refundable flights, permits or peak-season stays, the proposal will say so and those charges apply instead. Travel insurance may cover cancellation charges.</p>
 
 <h2>If we change or cancel your trip</h2>
 <p>Tailor-made travel sometimes needs adjusting. If we have to make a significant change to your trip before you travel, we will tell you as soon as possible and offer you the choice of accepting the change, taking a comparable alternative, or cancelling with a full refund of what you have paid us. We will not cancel your trip after the balance is paid except for reasons beyond our control, and if we do, we will refund what you have paid us.</p>
@@ -237,8 +250,11 @@ const PAGES = {
 <h2>Using this website</h2>
 <p>We describe places, seasons and entry rules as carefully as we can, but these change. The text and design of this site belong to us; photographs belong to their owners and are used with permission or under their licences. We link to other sites for information and are not responsible for their content.</p>
 
+<h2>Data protection</h2>
+<p>We use personal details only as described in our <a href="#/privacy">privacy policy</a>.</p>
+
 <h2>Law</h2>
-<p>These terms are governed by the law that applies where Grounder is established, and disputes go to the courts there. This does not take away any rights you have under the consumer law of the country where you live.</p>
+<p>These terms, and any dispute arising from them, are governed by the laws of England and Wales, and the courts of England and Wales have jurisdiction. If you live elsewhere, this does not take away any mandatory rights you have under the consumer law of your country of residence, and you may also bring proceedings there.</p>
 
 <h2>Contact</h2>
 <p>Grounder, Second Home Spitalfields, 68 Hanbury Street, London E1 5JL, United Kingdom. <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
@@ -249,13 +265,13 @@ const PAGES = {
     title: 'Cookie policy — Grounder', desc: 'What the Grounder website stores in your browser.',
     html: () => `
 <section class="p-hero p-hero-s"><div class="wrap"><div class="kick">Legal</div><h1>Cookie policy.</h1><p class="lead">What this site stores in your browser, listed exactly.</p></div></section>
-<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 30 October 2026</p>
+<section><div class="wrap"><div class="boxc"><div class="p-legal"><p class="p-legal-date">Last updated 1 November 2026</p>
 
 <h2>What cookies are</h2>
 <p>Cookies are small files a website saves in your browser. Local and session storage are similar stores inside your browser. Both can remember choices or count visits.</p>
 
 <h2>What this site stores</h2>
-<table class="legal-table"><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">Lasts</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Local storage, set by this site</td><td>Keeps the inquiries you send, so a reference opens your dashboard after a reload on the same device</td><td>Until you clear your browser storage</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Local storage, set by this site</td><td>Remembers your most recent inquiry reference</td><td>Until you clear your browser storage</td></tr></tbody></table>
+<table class="legal-table"><thead><tr><th scope="col">Name</th><th scope="col">Type</th><th scope="col">Purpose</th><th scope="col">Lasts</th></tr></thead><tbody><tr><td><code>grounder.inquiries.v1</code></td><td>Local storage, set by this site</td><td>Keeps the inquiries you send, so a reference opens your dashboard after a reload on the same device</td><td>Until you clear your browser storage</td></tr><tr><td><code>grounder.inquiries.v1.last</code></td><td>Local storage, set by this site</td><td>Remembers your most recent inquiry reference</td><td>Until you clear your browser storage</td></tr><tr><td><code>grounder.partners</code></td><td>Local storage, set by this site</td><td>Keeps a copy of a partner application you submit on this device</td><td>Until you clear your browser storage</td></tr></tbody></table>
 <p>This site sets no cookies of its own and runs no analytics, advertising or social-media trackers.</p>
 
 <h2>Your consent</h2>
@@ -263,6 +279,9 @@ const PAGES = {
 
 <h2>Other requests your browser makes</h2>
 <p>None. Fonts, images and scripts are served from this site. The dashboard pages run inside this site.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the website starts storing anything new, we will update this page, and the date at the top, before it does.</p>
 
 <h2>Contact</h2>
 <p>Questions about this policy: <a href="mailto:grounder@tourground.com">grounder@tourground.com</a></p>
