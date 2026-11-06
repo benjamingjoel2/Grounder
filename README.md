@@ -17,14 +17,14 @@ English (default, `/`), French (`/fr/`), German (`/de/`) and Spanish (`/es/`). E
 
 - Translations live in `i18n/{fr,de,es}.json` as `{ "English text": "translation" }`. After changing copy, run `node scripts/i18n.mjs build` to regenerate the language folders, the translated scripts and the sitemap (`check` also lists missing strings).
 - Translated: navigation, all pages (home, how it works, for agents, partners, about, contact), the legal pages, the inquiry, check and partner forms with their messages, meta descriptions, and the signature-package titles and filters shown in Explore.
-- Stays in English: country and city names (they are lookup keys for the globe, search and data), the long package bodies in `js/trips.js` (pitch, highlights, day-by-day, inclusions: 2.5 MB), the text the simulated dashboards generate at runtime, and the example client email (the brief reader parses English).
+- Stays in English: country and city names (they are lookup keys for search and data), the long package bodies in `js/trips.js` (pitch, highlights, day-by-day, inclusions: 2.5 MB), the text the simulated dashboards generate at runtime, and the example client email (the brief reader parses English).
 - The EN · FR · DE · ES switch sits in the header and the mobile menu and keeps the current view (`#/for-agents` stays `#/for-agents`).
 
 ## Structure
 
 | Path | What it is |
 |---|---|
-| `index.html` | The whole site: homepage, explore (destinations + globe), inquiry flow, dashboards, inner pages container, all CSS |
+| `index.html` | The whole site: homepage, explore (searchable destination list; the globe map was removed under the owner rule of 6 Nov 2026), inquiry flow, dashboards, inner pages container, all CSS |
 | `js/pages.js` | Site config, inner pages (How it works, For agents, Partners, About, Contact), partner/contact forms, mobile menu, localStorage persistence |
 | `js/data.js` | 130 countries and cities/regions per country (small; loads with the page) |
 | `js/trips.js` | Signature packages (2.7 MB, generated); loaded on first interaction or on any route that needs it |
